@@ -19,6 +19,8 @@ class Tea
     
     /**
      * Шифруем
+     * @param string $sText строка для шифровки
+     * @return string
      */
     public function encrypt($sText) 
     {
@@ -56,6 +58,8 @@ class Tea
 
     /**
      * Расшифровываем
+     * @param string $sText строка для расшифровки
+     * @return string
      */
     function decrypt($sText)
     {
@@ -86,6 +90,9 @@ class Tea
 
     /**
      * Операция xor
+     * @param string $a
+     * @param string $b
+     * @return string
      */
     private function xor($a, $b)
     {
@@ -100,6 +107,8 @@ class Tea
 
     /**
      * Шифрование блока
+     * @param string $sText
+     * @return string
      */
     public function block_encrypt($sText) 
     {
@@ -125,6 +134,8 @@ class Tea
 
     /**
      * Расшифровка блока
+     * @param string блок для расшифровки
+     * @return string
      */
     public function block_decrypt($sText) 
     {
@@ -155,6 +166,8 @@ class Tea
 
     /**
      * Конвертируем строку в long
+     * @param string $data
+     * @return long
      */
     private function str2long($data) 
     {
@@ -169,6 +182,8 @@ class Tea
 
     /**
      * Конвертируем long в строку
+     * @param long $sLength
+     * @return string
      */
     private function long2str($sLength)
     {
